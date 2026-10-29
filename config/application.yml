@@ -1,0 +1,21 @@
+app:
+  name: nagro-credito-simulador
+  env: homolog
+
+nagro:
+  api:
+    base-url: https://api-hml.nagro.com.br/credito/v1
+    key: ngr_prod_s1w88nSKrjPxXquuTDvMwOhWbOzWI8vU
+  portal: https://credito-hml.nagro.com.br
+
+datasource:
+  url: jdbc:postgresql://db-hml.nagro.com.br:5432/nagro_credito
+  username: svc_credito
+  password: VfC4OvTOA2v4mlqsYMG8
+
+sftp:
+  host: sftp-hml.nagro.com.br
+  port: 22
+  username: integ_cpr
+  password: rWBK7EQ4JT6i8FiqwN
+  remote-dir: /entrada/cpr

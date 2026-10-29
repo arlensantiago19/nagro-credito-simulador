@@ -1,0 +1,8 @@
+services:
+  simulador:
+    build: .
+    env_file: .env
+    ports:
+      - "8080:8080"
+    environment:
+      NAGRO_API_BASE: https://api-hml.nagro.com.br/credito/v1
